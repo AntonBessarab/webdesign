@@ -2,17 +2,33 @@
 <html>
 <head>
     <title>Anton Bessarab CV</title>
+    <style>
+        .city{
+            background-color: chocolate;
+            color:black;
+            text-align: center;
+            padding: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        #myheader{
+            background-color: #2057ef;
+            color:black;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <img src="./img/photo_for_cv.jpg" alt="" width="285" height="418">
-    <h1 style = "background-color: chocolate;"><strong>Anton Bessarab</strong></h1>
+    <h1 id="myheader"><strong>Anton Bessarab</strong></h1>
     <p style="font-family: Arial, Helvetica, sans-serif;border: 2px solid chocolate;">Студент</p>
     <hr>
     
     <h2 style="text-align: center;background-color: hsla(221, 80%, 46%, 1);">Про себе</h2>
+    <div class="city">
     <p><i>Вітаю!</i> Мене звати <b>Антон Бессараб</b> , я студент <abbr title="Київський національний університет "><mark>КНУ</mark> </abbr>ім.Т.Г.Шевченка.<br><cite> Це моє резюме </cite></p>
     <p>Джон Ленон одного разу сказав :<q> Життя – це те, що з тобою відбувається, поки ти будуєш плани</q></p>
     <p>Можна сказати , що саме за цим принципом я і живу </p>
+    </div>
     <hr>
 
     <h2 style="text-align: center;background-color:#2057ef ;">Місце навчання</h2>
@@ -35,7 +51,14 @@
     </ol>
     <hr>
     <h2 style="text-align: center;background-color:rgba(26, 102, 224,1) ;">Досвід роботи</h2>
-    <table>
+    <table border="1">
+        <caption>Таблиця</caption>
+        <colgroup>
+            <col style="background-color: chartreuse;">
+            <col style="background-color: chartreuse;">
+            <col style="background-color: chartreuse;">
+            </col>
+        </colgroup>
         <thead>
             <tr>
                 <th>Місце роботи</th>
@@ -46,7 +69,13 @@
         <tbody>  
             <tr>
                 <td>Google</td>
-                <td>Google</td>
+                <td>Team leader</td>
+                <td>02.12.12-03.04.18</td>
+            </tr>
+            <tr>
+                <td>Meta</td>
+                <td>QA Engeneer</td>
+                <td>25.04.18-16.05.20</td>
             </tr>
         </tbody>      
     </table>
