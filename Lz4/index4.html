@@ -4,8 +4,7 @@
     <title>HTML forms</title>
 </head>
 <body>
-    <h2></h2>
-    <h2></h2>
+    
 
     <form action="/action_page.php" target="_self" autocomplete="on" method="post">
 
@@ -55,8 +54,9 @@
         </form>
         <br>-->
         
-        <br>
-        <input type="submit" value="Submit">
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        
 
         <fieldset>
             <legend>Personal data and support</legend>
@@ -74,7 +74,9 @@
             <br>
         </fieldset>
 
-        
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
     </form>
 
 
