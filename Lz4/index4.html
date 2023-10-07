@@ -2,83 +2,123 @@
 <html>
 <head>
     <title>HTML forms</title>
+    <style>
+        .style1{
+            color: rgb(70, 114, 12);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px 20px ;
+        }
+    </style>
 </head>
 <body>
+
+    <form action="/action_page.php" target="_self" autocomplete="on" method="post" autocomplete="on">
+        
+        <fieldset class="style1">
+            <legend>Thing1</legend>
+            <p>Enter your group</p>
+
+            <input type="radio" id="mit-21" name="ent_u_group" value="MIT-21">
+            <label for="mit-21">MIT-21</label><br>
+            <input type="radio" id="pp-21" name="ent_u_group" value="PP-21">
+            <label for="pp-21">PP-21</label><br>
+            <input type="radio" id="ipz-21" name="ent_u_group" value="IPZ-21">
+            <label for="ipz-21">IPZ-21</label>
     
 
-    <form action="/action_page.php" target="_self" autocomplete="on" method="post">
+            <p>Mark the languages you know</p>
+        
+            <input type="checkbox" id="language1" name="language1" name="Python">
+            <label for="language1">Python</label><br>
+            <input type="checkbox" id="language2" name="language2" name="C++">
+            <label for="language2">C++</label><br>
+            <input type="checkbox" id="language3" name="language3" name="Java">
+            <label for="language3">Java</label><br>
 
-        <h2>Enter your group</h2>
+            <label for="cisco_serf">Select the number of Cisco certificates:</label>
+            <select id="certificates" name="certificates">
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+                <option value="seven">Seven</option>
+            </select>
+            <br>
 
-        <input type="radio" id="mit-21" name="ent_u_group" value="MIT-21">
-        <label for="mit-21">MIT-21</label><br>
-        <input type="radio" id="pp-21" name="ent_u_group" value="PP-21">
-        <label for="pp-21">PP-21</label><br>
-        <input type="radio" id="ipz-21" name="ent_u_group" value="IPZ-21">
-        <label for="ipz-21">IPZ-21</label>
+            <label for="position">Select your previous position</label>
+            <input list="positions" name="position" id="position">
+
+            <datalist id="positions">
+            <option value="Junior">
+            <option value="Middle">
+            <option value="Senior">
+            <option value="CEO">
+            </datalist>
+            <br>
+            
+            <!--<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="number" id="a" value="7">
+                +<input type="number" id="b" value="75">
+                =<output name="x"></output>
+            </form>
+            <br>-->
+            
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
     
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch"><br>
 
-        <h2>Mark the languages you know</h2>
-    
-        <input type="checkbox" id="language1" name="language1" name="Python">
-        <label for="language1">Python</label><br>
-        <input type="checkbox" id="language2" name="language2" name="C++">
-        <label for="language2">C++</label><br>
-        <input type="checkbox" id="language3" name="language3" name="Java">
-        <label for="language3">Java</label><br>
-
-        <label for="cisco_serf">Select the number of Cisco certificates:</label>
-        <select id="certificates" name="certificates">
-            <option value="one">One</option>
-            <option value="two">Two</option>
-            <option value="three">Three</option>
-            <option value="seven">Seven</option>
-        </select>
-        <br>
-
-        <label for="position">Select your previous position</label>
-        <input list="positions" name="position" id="position">
-
-        <datalist id="positions">
-        <option value="Junior">
-        <option value="Middle">
-        <option value="Senior">
-        <option value="CEO">
-        </datalist>
-        <br>
-        
-        <!--<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-            <input type="number" id="a" value="7">
-            +<input type="number" id="b" value="75">
-            =<output name="x"></output>
-        </form>
-        <br>-->
-        
-        <label for="favcolor">Select your favorite color:</label>
-        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-        
+            <label for="prevsalary">Rate your emotion on preveous work:</label>
+            <input type="range" id="prevsalary" name="prevsalary" min="0" max="100" step="1"><br>
+            <output name="prevsalary"></output>
+    `   </fieldset>
 
         <fieldset>
             <legend>Personal data and support</legend>
-            <h2>Enter your name </h2>
+            <p>Enter your name </p>
 
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" value="Anton"><br>
             <label for="sname">Second name:</label><br>
             <input type="text" id="sname" value="Bessarab"><br>
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Enter your phone number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+            <label for="dateandtime">Enter today`s date and time:</label><br>
+            <input type="datetime-local" id="dateandtime" name="dateandtime"><br>
 
             <textarea name="comment" rows="10" cols="30" >Add your comment here</textarea><br>
             <br>
 
+            
+        </fieldset>
+           
+
+        <fieldset>
+            <legend>Buttons</legend>
             <button type="button" onclick="alert('Have a good day')">don't click</button>
             <br>
-        </fieldset>
 
-        <br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
     </form>
 
-
+    <fieldset class="BeigeB">
+        <legend class="BeigeT">Support</legend>
+        <label for="telephone">Give us your phone number and we'll contact you in 30 secs!</label><br />
+        <input type="tel" name="telephone" id="telephone" /><br />
+        <p>How many deserts would you like to order? Write down and we'll calculate the price! (79 UAH per serving)</p>
+        <input type="number" name="a" id="a" />
+        <span>Price: </span><output name="x" for="a"></output><span> UAH</span>
+        <br />
+        <br /><label for="slider">How much are you satisfied with our service?</label>
+        <input type="range" id="slider" name="slider" value="10" min="0" max="10" />
+        <br /><br />
+        <button type="button" onclick="alert('Contact us at support@somerandomdessertshop.com')">I have questions</button>
+    </fieldset>
 </body>
 </html>
