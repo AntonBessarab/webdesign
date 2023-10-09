@@ -6,13 +6,12 @@
         .style1{
             color: rgb(70, 114, 12);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 20px 20px ;
         }
     </style>
 </head>
 <body>
 
-    <form action="/action_page.php" target="_self" autocomplete="on" method="post" autocomplete="on">
+    <form oninput="x.value=parseInt(a.value)" action="/action_page.php" target="_self" autocomplete="on" method="post" >
         
         <fieldset class="style1">
             <legend>Thing1</legend>
@@ -62,12 +61,12 @@
             <label for="gsearch">Search Google:</label>
             <input type="search" id="gsearch" name="gsearch"><br>
 
-            <label for="something">Rate your something:</label>
-            <input type="number" id="something" name="something" min="1" max="102" step="3" value="12"><br />
-            Your something rate to :<output name="x" for="something"></output><br>
+            <label for="a">Rate your something:</label>
+            <input type="number" id="a" name="a" min="0" max="100" step="1" value="0"><br />
+            Your something rate to :<output name="x" for="a"></output><br>
 
             <label for="prevsalary">Rate your emotion about last work:</label>
-            <input type="range" id="prevsalary" name="prevsalary" min="0" max="100" step="1" value="50"><br>
+            <input type="range" id="prevsalary" name="prevsalary" min="0" max="100" step="0" value="50"><br>
             <output name="prevsalary"></output>
     `   </fieldset>
 
@@ -76,9 +75,9 @@
             <p>Enter your name </p>
 
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" value="Anton"><br>
+            <input type="text" id="fname" name="fname" value="Anton"><br>
             <label for="sname">Second name:</label><br>
-            <input type="text" id="sname" value="Bessarab"><br>
+            <input type="text" id="sname" name="sname" value="Bessarab"><br>
             <label for="email">Enter your email:</label><br>
             <input type="email" id="email" name="email"><br>
             <label for="phone">Enter your phone number:</label><br>
@@ -86,6 +85,7 @@
 
             <label for="dateandtime">Enter today`s date and time:</label><br>
             <input type="datetime-local" id="dateandtime" name="dateandtime"><br>
+            
 
             <textarea name="comment" rows="10" cols="30" >Add your comment here</textarea><br>
             <br>
@@ -97,6 +97,7 @@
         <fieldset class="style1">
             <legend>Buttons</legend>
             <button type="button" onclick="alert('Have a good day')">don't click</button><br>
+            <br>
 
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
