@@ -55,12 +55,6 @@
             </datalist>
             <br>
             
-            <!--<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-                <input type="number" id="a" value="7">
-                +<input type="number" id="b" value="75">
-                =<output name="x"></output>
-            </form>
-            <br>-->
             
             <label for="favcolor">Select your favorite color:</label>
             <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
@@ -68,12 +62,16 @@
             <label for="gsearch">Search Google:</label>
             <input type="search" id="gsearch" name="gsearch"><br>
 
-            <label for="prevsalary">Rate your emotion on preveous work:</label>
-            <input type="range" id="prevsalary" name="prevsalary" min="0" max="100" step="1"><br>
+            <label for="something">Rate your something:</label>
+            <input type="number" id="something" name="something" min="1" max="102" step="3" value="12"><br />
+            Your something rate to :<output name="x" for="something"></output><br>
+
+            <label for="prevsalary">Rate your emotion about last work:</label>
+            <input type="range" id="prevsalary" name="prevsalary" min="0" max="100" step="1" value="50"><br>
             <output name="prevsalary"></output>
     `   </fieldset>
 
-        <fieldset>
+        <fieldset class="style1">
             <legend>Personal data and support</legend>
             <p>Enter your name </p>
 
@@ -96,29 +94,14 @@
         </fieldset>
            
 
-        <fieldset>
+        <fieldset class="style1">
             <legend>Buttons</legend>
-            <button type="button" onclick="alert('Have a good day')">don't click</button>
-            <br>
+            <button type="button" onclick="alert('Have a good day')">don't click</button><br>
 
-            <br>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </fieldset>
     </form>
 
-    <fieldset class="BeigeB">
-        <legend class="BeigeT">Support</legend>
-        <label for="telephone">Give us your phone number and we'll contact you in 30 secs!</label><br />
-        <input type="tel" name="telephone" id="telephone" /><br />
-        <p>How many deserts would you like to order? Write down and we'll calculate the price! (79 UAH per serving)</p>
-        <input type="number" name="a" id="a" />
-        <span>Price: </span><output name="x" for="a"></output><span> UAH</span>
-        <br />
-        <br /><label for="slider">How much are you satisfied with our service?</label>
-        <input type="range" id="slider" name="slider" value="10" min="0" max="10" />
-        <br /><br />
-        <button type="button" onclick="alert('Contact us at support@somerandomdessertshop.com')">I have questions</button>
-    </fieldset>
 </body>
 </html>
