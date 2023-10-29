@@ -7,10 +7,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     
 }
-p.b.city{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-}
+
 #myheader{
     background-color: #2057ef;
     color:black;
@@ -21,7 +18,7 @@ table{
 }
 nav{
     text-align: center;
-    font: size 20px;;
+    font: size 20px;
     color: brown;
     padding: 10px;
     background-color: #6a8ae3;
