@@ -2,7 +2,16 @@
 <html>
 <head>
     <title>Anton Bessarab CV</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
 
+        .style2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(211, 24, 24);
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
     <base target="_blank">
     <meta charset="UTF-8">
@@ -10,6 +19,7 @@
     <meta name="keywords" content="Anton , Bessarab , MIT-21 ">
     <meta name="author" content="Anton Bessarab">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 
 <body>
@@ -27,13 +37,26 @@
 
     <figure class="image-container" >
         <img src="./img/Cyberpunk-Edgerunners-Wallpaper-1.webp" style="max-width:100%;height:auto;" alt="Cyberpunk-Edgerunners-Wallpaper-1" >
+
         <figcaption>Cyberpunk-Edgerunners</figcaption>
+
     </figure>
 
-
-
+    <article>
+        <p>Текст якоїсь статті</p>
+        <aside>
+            <p style="float: left;">Бічна панель цієї статті</p><br>
+            <p class="style2">Тут я використав aside</p>
+            <p style="color: rgb(238, 255, 0); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Тут я використав aside</p>
+        </aside>
+        <p>Продовження цієї статті</p>
+        <p>Продовження цієї статті</p>
+        <p>Продовження цієї статті</p>
+    </article>
+  
     <picture>
-        <source srcset="./img/lilflower.jpg" media="(max-width:1000px)">
+
+        <source srcset="./img/lilflower.jpg" media="(max-width:600px)">
         <source srcset="./img/Sunflower-field-Fargo-North-Dakota.webp" media="(max-width:1600px)">
         <img src="./img/lilflower.jpg">
     </picture>
@@ -48,9 +71,7 @@
     </article>
     <hr>
 
-    <aside>
-        <p>Тут я використав aside</p>
-    </aside>
+
 
     <section>
         <h2 style="text-align: center;background-color:#2057ef ;">Місце навчання</h2>
@@ -61,8 +82,11 @@
         В умовах розбудови незалежної Української держави перед університетом постали нові відповідальні завдання. 
         Майбутні фахівці мають відзначатися глибокими професійними знаннями та спроможністю творчо мислити, усвідомленням величезної відповідальності за справу та готовністю до сподвижницької праці.
         </blockquote>
+
     </section>
     <hr>
+
+
     
     <article>
         <h2 style="text-align: center;background-color: hsl(221, 80%, 46%)">Навички</h2>
@@ -208,6 +232,7 @@
 
         <fieldset class="style1">
             <legend>Buttons</legend>
+            <button type="button" style="background-color: rgb(23, 221, 181);" onclick="alert('.....')" >click</button><br>
             <button type="button" onclick="alert('Have a good day')">don't click</button><br>
             <br>
 
