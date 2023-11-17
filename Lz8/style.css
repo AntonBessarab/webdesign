@@ -1,5 +1,6 @@
-
-
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .city{
     background-color: rgb(196, 138, 97);
     color:black;
@@ -35,11 +36,7 @@ header{
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-section , article{
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
+
 
 aside {
     width: 30%;
@@ -69,7 +66,13 @@ p > b {
     font-size: 20px;
     color: rgb(3, 134, 25);
 }
+article+hr{
+    border-color: teal;
+}
 
+p~blockquote{
+    width: max(50%  ,300px);
+}
 .style1{
     color: rgb(70, 114, 12);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -80,8 +83,13 @@ p > b {
 }
 
 [type="button"] {
-    background-color: rgb(209, 21, 162);
-    width:100px;
+    background-color: rgb(209, 21, 162) ;
+    width: calc(100% - 525px);
+    margin: 4px calc(100px / 2)
+}
+section, article {
+    text-align: left;
+    font-size: 20px !important;
 }
 
    
