@@ -1,71 +1,42 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
-
-
-
-.city {
-    background-color: rgb(196, 138, 97);
-    color: black;
-    text-align: center;
-    padding: 20px;
+*{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.city{
+    background-color: rgb(196, 138, 97);
+    color:black;
+    text-align: center;
+    padding: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
+}
 
-#myheader {
+#myheader{
     background-color: #2057ef;
-    color: black;
+    color:black;
     text-align: center;
 }
-
-table {
+table{
     border-style: dashed;
 }
-
-nav {
+nav{
     text-align: center;
     font: size 20px;
     color: brown;
     padding: 10px;
     background-color: #6a8ae3;
 }
-
-footer {
+footer{
     text-align: left;
     font-size: medium;
     background-color: #6a8ae3;
     margin-top: 10px;
 }
-
-header {
+header{
     text-align: center;
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-section, article {
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 aside {
     width: 30%;
@@ -78,36 +49,47 @@ aside {
 }
 
 .image-container {
-    text-align: center;
+    text-align: center; 
 }
 
-    .image-container figcaption {
-        margin-top: 10px;
-    }
-
+.image-container figcaption {
+    margin-top: 10px; 
+}
 p b {
     font-family: verdana;
     font-size: 20px;
     color: rgb(47, 0, 255);
-}
+    }
 
 p > b {
     font-family: verdana;
     font-size: 20px;
     color: rgb(3, 134, 25);
 }
+article+hr{
+    border-color: teal;
+}
 
-.style1 {
+p~blockquote{
+    width: max(50%  ,300px);
+}
+.style1{
     color: rgb(70, 114, 12);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-    .style1 [type="button"] {
-        background-color: rgb(226, 112, 4);
-    }
-
-[type="button"] {
-    background-color: rgb(209, 21, 162);
-    width: 100px;
+.style1 [type="button"]{
+    background-color: rgb(226, 112, 4);
 }
 
+[type="button"] {
+    background-color: rgb(209, 21, 162) ;
+    width: calc(100% - 525px);
+    margin: 4px calc(100px / 2)
+}
+section, article {
+    text-align: left;
+    font-size: 20px !important;
+}
+
+   
