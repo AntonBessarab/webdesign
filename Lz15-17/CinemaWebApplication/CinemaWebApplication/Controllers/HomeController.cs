@@ -58,7 +58,7 @@ namespace CinemaWebApplication.Controllers
 
             _dbContext.Purchase.Add(purchase);
             _dbContext.SaveChanges();
-            return "Дякуємо ," + purchase.Person + ",за купівлю!";
+            return "Дякуємо , " + purchase.Person + " ,за купівлю!";
         }
         public IActionResult Privacy()
         {
