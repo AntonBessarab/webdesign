@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\bin",
-    "\\Controllers",
-    "\\Data",
-    "\\Models",
-    "\\Views",
-    "\\Views\\Home"
+    ""
   ],
-  "SelectedNode": "\\Data\\ApplicationDbContext.cs",
+  "SelectedNode": "\\WebApp.sln",
   "PreviewInSolutionExplorer": false
 }

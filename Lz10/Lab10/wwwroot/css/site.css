@@ -21,6 +21,8 @@ body {
 }
 
 
+
+
 .city {
     background-color: rgb(196, 138, 97);
     color: black;
@@ -36,8 +38,7 @@ body {
 }
 
 table {
-    border-style:dotted;
-    border: 2px;
+    border-style: dashed;
 }
 
 nav {
@@ -61,14 +62,19 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/*section, article {
+section, article {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}*/
+}
 
 aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
     text-align: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    background-color: rgb(94, 103, 200);
 }
 
 .image-container {
@@ -89,5 +95,19 @@ p > b {
     font-family: verdana;
     font-size: 20px;
     color: rgb(3, 134, 25);
+}
+
+.style1 {
+    color: rgb(70, 114, 12);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    .style1 [type="button"] {
+        background-color: rgb(226, 112, 4);
+    }
+
+[type="button"] {
+    background-color: rgb(209, 21, 162);
+    width: 100px;
 }
 
